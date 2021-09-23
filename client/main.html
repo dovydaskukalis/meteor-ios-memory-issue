@@ -1,0 +1,18 @@
+<head>
+  <title>simple-todos</title>
+  <script>
+    setInterval(function () {
+      fetch("/cordova/main.css").then((res) => {
+        if (res.status === 200) {
+          console.log("Success");
+        } else {
+          console.log("Failed", res.status);
+        }
+      });
+    }, 2000);
+  </script>
+</head>
+
+<body>
+  <div id="react-target"></div>
+</body>
